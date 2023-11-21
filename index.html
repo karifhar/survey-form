@@ -7,6 +7,41 @@
         <title>Survey Form</title>
     </head>
     <body>
-        <h1></h1>
+      <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description" name="description">Welcome to Survey For Improving Our Service</p>
+        <form id="survey-form">
+          <fieldset>
+            <legend>Personal Data</legend>
+            <label for="name" id="name-label">Name: <input id="name" type="text" placeholder="Fill With Your Fullname" required></label>
+            <label for="email" id="email-label">Email: <input id="email" type="email" required placeholder="me@gmail.com"></label>
+            <label for="number" id="number-label">Phone Number (Optional): <input id="number" type="number" min="13" max="120" placeholder="+1234556"></label>
+            <label for="dropdown">Gender:
+              <select name="gender" id="dropdown">
+              <option value="Man">Man</option>
+              <option value="Woman">Woman</option>
+              </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <label for="menu"><p>How About our menu?</p>
+              <textarea id="menu" name="menu" rows="6" cols="50" placeholder="I would like to..."></textarea>
+            </label>
+            <p>What can we improve for?</p>
+            <label for="none-radio"><input class="inline" id="none-radio" name="improve" type="radio" value="none" checked>(None)</label>
+            <label for="variant-menu"><input class="inline" id="variant-menu" name="improve" type="radio" value="variant-menu">Variant of Menu</label>
+            <label for="service"><input class="inline" id="service" type="radio" name="improve" value="sevice">Service</label>
+            <label for="sanitation"><input class="inline" id="sanitation" type="radio" name="improve"  value="sanitation">Sanitation</label>
+          </fieldset>
+          <fieldset>
+            <p>Where did u hear about our restaurant?</p>
+            <Label for="instagram"><input class="inline" type="checkbox" name="marketing1" id="instagram" value="instagram">Ad-Instagram</Label>
+            <label for="influencer"><input class="inline" type="checkbox" name="marketing2" id="influencer" value="influencer">Food Influencer</label>
+            <label for="post-ig"><input class="inline" type="checkbox" name="marketing3" id="post-ig" value="post-ig">Restaurant Post's Instagram</label>
+            <label for="other-marketing"> <input class="inline" type="checkbox" name="marketing4" id="other-marketing" value="other-marketing">Other</option>
+          </fieldset>
+          <input class="submit-btn" id="submit" type="submit" value="Submit">
+        </form>
+      </div>
     </body>
 </html>

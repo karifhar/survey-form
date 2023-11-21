@@ -1,0 +1,80 @@
+body {
+    width: 100%;
+    background-color: rgb(0, 0, 40);
+    background-image: url(./assets/images/pexels-flo-dahm-541216.jpg);
+    color: white;
+    margin: 0;
+    height: 150vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+h1, p[name="description"] {
+    text-align: center;
+}
+
+p {
+    margin: 5px 0 15px 0;
+}
+
+label {
+    display: block;
+    margin: 5px auto;
+}
+
+label[for="dropdown"] {
+    margin-top: 10px;
+}
+
+.container {
+    background-color: rgba(0, 1, 0, 0.9);
+}
+
+form, .container {
+    margin: 0 auto;
+    width: 600px;
+    padding: 15px 0;
+}
+
+fieldset, input {
+    border: 1px none;
+}
+
+input {
+    min-height: 2em;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 5px auto;
+    background-color: white
+}
+
+.submit-btn {
+    color: white;
+    background-color: rgba(0, 0, 60, 1);
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(255,255,255);
+}
+
+.inline {
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5rem 0 0;
+}
+
+select {
+    width: 10em;
+    height: 2em;
+    margin: 5px 0;
+}
+
+legend {
+    padding: 0;
+}
+
